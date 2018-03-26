@@ -110,20 +110,13 @@ public class ExampleInstrumentedTest {
     }
 
     @Test
-    public void loginTest() {
+    public void autoCompleteTestWithLoginFLow() {
         onView(withId(R.id.edt_username)).perform(typeText("whiteelephant261"), closeSoftKeyboard());
         onView(withId(R.id.edt_password)).perform(typeText("video"), closeSoftKeyboard());
         onView(withId(R.id.btn_login)).perform(click());
-
-
-
-    }
-    @Test
-    public void autoCompleteTest() {
-
+        SystemClock.sleep(10000);
         onView(withId(R.id.textSearch)).perform(typeText("s"), closeSoftKeyboard());
         onView(withId(R.id.textSearch)).perform(typeText("a"), closeSoftKeyboard());
-        //onView(withId(R.id.textSearch)).perform(typeText("r"), closeSoftKeyboard());
         onView(withText("Sarah Friedrich"))
                 .inRoot(withDecorView(not(is(mActivityRule.getActivity().getWindow().getDecorView()))))
                 .check(matches(isDisplayed()));
