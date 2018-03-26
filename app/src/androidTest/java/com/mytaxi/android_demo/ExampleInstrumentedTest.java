@@ -114,7 +114,7 @@ public class ExampleInstrumentedTest {
         onView(withId(R.id.edt_username)).perform(typeText("whiteelephant261"), closeSoftKeyboard());
         onView(withId(R.id.edt_password)).perform(typeText("video"), closeSoftKeyboard());
         onView(withId(R.id.btn_login)).perform(click());
-        SystemClock.sleep(10000);
+        SystemClock.sleep(20000);
         onView(withId(R.id.textSearch)).perform(typeText("s"), closeSoftKeyboard());
         onView(withId(R.id.textSearch)).perform(typeText("a"), closeSoftKeyboard());
         onView(withText("Sarah Friedrich"))
