@@ -1,150 +1,30 @@
-cd Do	Last login: Mon Mar 26 15:54:45 on ttys005
-C02S33BCG8WP:~ ashisharma$ cd Do
-Documents/ Downloads/
-C02S33BCG8WP:~ ashisharma$ cd Downloads/
-C02S33BCG8WP:Downloads ashisharma$ ls
-1023801wl504-53-59-8-080018E__DKMSys_DKMInfoway__OutPutFiles_GROUPON_N4270312ReimClaimForm_1023801wl504-53-59-8-080018.pdf
-1023801wl672-52-4-9-090018E__DKMSys_DKMInfoway__OutPutFiles_GROUPON_N4270312ReimClaimForm_1023801wl672-52-4-9-090018.pdf
-1023801wl756-6-31-12-120018E__DKMSys_DKMInfoway__OutPutFiles_GROUPON_N4270312ReimClaimForm_1023801wl756-6-31-12-120018.pdf
-AmazonMusicInstaller.dmg
-Ashish_Sharma.pdf
-BILLS
-Blue Jeans Launcher.dmg
-Cassandra.pptx
-DDN.docx
-DJBBill_161348949437.pdf
-DJBBill_261343418746.pdf
-E__DKMSys_DKMInfoway_OutPutFiles_72584wl672-50-13-9-090018.pdf
-FORM NO 12BB.docx
-GROUPON BILLS FBP
-Groupon-India-Payroll-Handbook_2016-17 (1).pdf
-IMG_20170119_192926517.jpg
-MobileAppAutomationTest-master
-MobileAppAutomationTest.zip
-MobileBill.pdf
-Na_divisions (1).txt
-Na_divisions.txt
-PSP Games
-Payment_Receipt.pdf
-RAFLoggedInNA.pdf
-Seasons
-Software
-achecker-subcenter-ls.pdf
-achecker_2018-03-13_11-05-03.pdf
-achecker_2018-03-13_11-07-48.pdf
-achecker_2018-03-13_11-10-43.pdf
-achecker_2018-03-13_11-24-18.pdf
-achecker_2018-03-19_08-23-21.pdf
-achecker_appdownload-LS.pdf
-acheckers-unsubdivision-LS.pdf
-acheckers-usubdivision.pdf
-apache-jmeter-3.1
-appdownload-acheckers.pdf
-backgroundDefault.jpg
-documents
-e_card.pdf
-getEmailHash.py
-pageobjectmodel-seleniumFramework-master
-poc-dump-cassandra-master
-printTicket.doc
-pycharm-community-2017.3.3.dmg
-rafnonloggedInNA.pdf
-reneeddocumentsforusvisa.zip
-sample_java_project
-selenium-server-standalone-3.8.1.jar
-settings.xml
-signature.jpeg
-snapdealMobileApiAutomation
-snapdealMobileApiAutomation.zip
-subcenter-acheckers.pdf
-subsflow-qa-master
-subsflow-qa-master.zip
-v4_uuids.txt
-C02S33BCG8WP:Downloads ashisharma$ ls
-1023801wl504-53-59-8-080018E__DKMSys_DKMInfoway__OutPutFiles_GROUPON_N4270312ReimClaimForm_1023801wl504-53-59-8-080018.pdf
-1023801wl672-52-4-9-090018E__DKMSys_DKMInfoway__OutPutFiles_GROUPON_N4270312ReimClaimForm_1023801wl672-52-4-9-090018.pdf
-1023801wl756-6-31-12-120018E__DKMSys_DKMInfoway__OutPutFiles_GROUPON_N4270312ReimClaimForm_1023801wl756-6-31-12-120018.pdf
-AmazonMusicInstaller.dmg
-Ashish_Sharma.pdf
-BILLS
-Blue Jeans Launcher.dmg
-Cassandra.pptx
-DDN.docx
-DJBBill_161348949437.pdf
-DJBBill_261343418746.pdf
-E__DKMSys_DKMInfoway_OutPutFiles_72584wl672-50-13-9-090018.pdf
-FORM NO 12BB.docx
-GROUPON BILLS FBP
-Groupon-India-Payroll-Handbook_2016-17 (1).pdf
-IMG_20170119_192926517.jpg
-MobileAppAutomationTest-master
-MobileAppAutomationTest.zip
-MobileBill.pdf
-Na_divisions (1).txt
-Na_divisions.txt
-PSP Games
-Payment_Receipt.pdf
-RAFLoggedInNA.pdf
-Seasons
-Software
-achecker-subcenter-ls.pdf
-achecker_2018-03-13_11-05-03.pdf
-achecker_2018-03-13_11-07-48.pdf
-achecker_2018-03-13_11-10-43.pdf
-achecker_2018-03-13_11-24-18.pdf
-achecker_2018-03-19_08-23-21.pdf
-achecker_appdownload-LS.pdf
-acheckers-unsubdivision-LS.pdf
-acheckers-usubdivision.pdf
-apache-jmeter-3.1
-appdownload-acheckers.pdf
-backgroundDefault.jpg
-documents
-e_card.pdf
-getEmailHash.py
-pageobjectmodel-seleniumFramework-master
-poc-dump-cassandra-master
-printTicket.doc
-pycharm-community-2017.3.3.dmg
-rafnonloggedInNA.pdf
-reneeddocumentsforusvisa.zip
-sample_java_project
-selenium-server-standalone-3.8.1.jar
-settings.xml
-signature.jpeg
-snapdealMobileApiAutomation
-snapdealMobileApiAutomation.zip
-subcenter-acheckers.pdf
-subsflow-qa-master
-subsflow-qa-master.zip
-v4_uuids.txt
-C02S33BCG8WP:Downloads ashisharma$ cd MobileAppAutomationTest
-MobileAppAutomationTest-master/ MobileAppAutomationTest.zip
-C02S33BCG8WP:Downloads ashisharma$ cd MobileAppAutomationTest-master/
-C02S33BCG8WP:MobileAppAutomationTest-master ashisharma$ cd AndroidDemo/
-C02S33BCG8WP:AndroidDemo ashisharma$ ls
+machine:
+  environment:
+    PATH: "~/$CIRCLE_PROJECT_REPONAME/gradle-2.9/bin:$PATH"
+    TERM: "dumb"
+    ADB_INSTALL_TIMEOUT: "10"
+    GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx2048m -XX:+HeapDumpOnOutOfMemoryError"'
+
+dependencies:
+  pre:
+    - wget "https://services.gradle.org/distributions/gradle-2.9-bin.zip"; unzip gradle-2.9-bin.zip
+    - echo y | android update sdk --no-ui --all --filter tool,extra-android-m2repository,extra-android-support,extra-google-google_play_services,extra-google-m2repository,android-23
+    - echo y | android update sdk --no-ui --all --filter build-tools-23.0.2
+
 test:
   override:
     # start the emulator
-    - emulator -avd circleci-android24 -no-window:
+    - emulator -avd circleci-android22 -no-audio -no-window:
         background: true
         parallel: true
     # wait for it to have booted
     - circle-android wait-for-boot
+    # unlock the emulator screen
+    - sleep 30
+    - adb shell input keyevent 82
     # run tests  against the emulator.
-    - ./gradlew connectedAndroidTest
+    - ./gradlew connectedAndroidTest -PdisablePreDex
     # copy the build outputs to artifacts
-    - cp -r my-project/build/outputs $CIRCLE_ARTIFACTS
+    - cp -r app/build/outputs $CIRCLE_ARTIFACTS
     # copy the test results to the test results directory.
-    - cp -r my-project/build/outputs/androidTest-results/* $CIRCLE_TEST_REPORTS
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-"config.yml" 14L, 522C
+    - cp -r app/build/outputs/androidTest-results/* $CIRCLE_TEST_REPORTS
